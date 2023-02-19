@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding-top: 72px;
+  font-family: Poppins;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 100%;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+nav.scrolled {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 8%);
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+}
+
+nav div {
+  display: flex;
+  gap: 12px;
+  opacity: 0.7;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.scroll-top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 36px;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  border-radius: 50%;
+  background: #4285f4;
+  color: #f9f9f9;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.scroll-top-button.visible {
+  opacity: 1;
+  visibility: visible;
+}
